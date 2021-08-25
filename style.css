@@ -1,0 +1,333 @@
+/* Global Style */
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "MuseoModerno", cursive;
+}
+
+body {
+  background: linear-gradient(
+    356deg,
+    rgba(29, 182, 214, 1) 0%,
+    rgba(29, 101, 214, 1) 80%
+  );
+  /* background-image: url(./luke-chesser-IGtutkXikuc-unsplash.jpg); */
+  height: 100vh;
+}
+
+.box-pending,
+.box-confirmed {
+  background-color: #e6eaed;
+  width: 43%;
+  height: 83vh;
+  padding: 10px 0 0 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.display {
+  display: flex;
+  width: 93%;
+  flex-direction: column;
+  overflow: scroll;
+  align-items: center;
+}
+.display::-webkit-scrollbar {
+  width: 5px;
+  height: 30%;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 97%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  max-height: 45vh;
+  padding: 20px 0 0 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-confirm {
+  background-color: #1d87d6;
+}
+
+.card-confirm span {
+  color: #222222;
+}
+
+.label-confirm {
+  color: #e4e4e4;
+}
+
+.box-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+.conf,
+.cancel {
+  width: 20%;
+  border: none;
+  border-radius: 10px;
+  height: 5vh;
+  color: white;
+}
+
+.conf {
+  background-color: #ff5e1f;
+}
+
+.cancel {
+  color: black;
+  border: 1px solid #ff5e1f;
+}
+
+label {
+  font-weight: 700;
+}
+
+nav {
+  background-color: #f6f6ff;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.logo {
+  padding-left: 60px;
+}
+.logo h1 {
+  font-size: 30px;
+}
+
+.title {
+  padding: 10px 40px 10px 40px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding: 30px 50px;
+  justify-content: space-between;
+}
+
+.container .add {
+  width: 10%;
+  height: 8vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff5e1f;
+  color: white;
+  font-size: 40px;
+}
+
+.container button:hover {
+  background-color: #ff5f1fc9;
+}
+
+.form-input {
+  background-color: #ffffff;
+  width: 90%;
+  height: 70vh;
+  position: absolute;
+  top: 95px;
+  left: 80px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 100px, rgba(0, 0, 0, 0.4) 0px 3px 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h2,
+h1 {
+  color: #1d87d6;
+}
+h4,
+h6 {
+  color: rgb(83, 74, 74);
+}
+
+span {
+  color: #ff5e1f;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+  border: 2px solid #e4e4e4;
+  font-weight: 600;
+  background-color: #f6f6ff;
+  transition: all 0.25s;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border: 3px solid #1d87d6;
+}
+
+.left {
+  margin-right: 50px;
+}
+
+.name-input,
+.check-in-out,
+.booking,
+.row,
+.add-on,
+.address-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.firstName,
+.lastName,
+.check-in,
+.check-out,
+.breakfast-select,
+.mobile,
+.email,
+.address-box {
+  display: flex;
+  flex-direction: column;
+}
+
+:focus {
+  outline: none;
+}
+
+/* Name Input */
+
+.firstName {
+  margin-right: 50px;
+}
+.firstName,
+.lastName {
+  display: flex;
+  flex-direction: column;
+}
+.firstName input,
+.lastName input {
+  height: 5vh;
+  width: 250px;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+/* Check In Out */
+.check-in input,
+.check-out input {
+  height: 5vh;
+  width: 150px;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+.check-in {
+  margin-right: 50px;
+}
+
+/* Booking For */
+.guest-input {
+  margin-right: 50px;
+}
+
+/* BreakFast */
+.breakfast-select select {
+  height: 5vh;
+  width: 180px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+/* Add on */
+.add-on {
+  display: flex;
+}
+.box-left {
+  margin-right: 50px;
+}
+
+/* Mobile Number */
+.mobile input {
+  height: 5vh;
+  width: 250px;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+.mobile {
+  margin-right: 50px;
+}
+
+/* Email */
+.email input {
+  height: 5vh;
+  width: 250px;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+/* Address */
+.address-box textarea {
+  height: 15vh;
+  width: 550px;
+  border-radius: 10px;
+  padding: 20px 0 0 20px;
+}
+
+.right .btn-input {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ff5e1f;
+  border: none;
+  color: white;
+  font-weight: 700;
+  transition: all 0.25s;
+}
+.btn:hover {
+  background-color: #ff5f1fc9;
+}
+
+/* Form Result */
+
+.right-list,
+.left-list {
+  flex: 1;
+}
+
+.date-row {
+  display: flex;
+}
+
+.title-res {
+  color: #1d87d6;
+}
+
+.title {
+  border-bottom: 3px solid #1d87d6;
+  margin-bottom: 30px;
+}
+#smoking {
+  accent-color: red;
+}
